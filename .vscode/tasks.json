@@ -6,7 +6,7 @@
             "type": "shell",
             "command": "idf.py",
             "args": [
-                "build"
+                "--ccache build"
             ],
             "group": {
                 "kind": "build",
@@ -19,6 +19,18 @@
             "command": "idf.py",
             "args": [
                 "flash"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": false
+            }
+        },
+        {
+            "label": "idf.py monitor",
+            "type": "shell",
+            "command": "idf.py",
+            "args": [
+                "monitor"
             ],
             "group": {
                 "kind": "build",
