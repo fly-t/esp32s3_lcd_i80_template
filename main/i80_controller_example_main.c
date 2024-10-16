@@ -92,8 +92,6 @@ static const char *TAG = "example";
 // Supported alignment: 16, 32, 64. A higher alignment can enables higher burst transfer size, thus a higher i80 bus throughput.
 #define EXAMPLE_PSRAM_DATA_ALIGNMENT 64
 
-extern void example_lvgl_demo_ui(lv_disp_t *disp);
-
 static bool example_notify_lvgl_flush_ready(esp_lcd_panel_io_handle_t panel_io, esp_lcd_panel_io_event_data_t *edata, void *user_ctx)
 {
     lv_disp_drv_t *disp_driver = (lv_disp_drv_t *)user_ctx;
