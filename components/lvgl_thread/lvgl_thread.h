@@ -10,11 +10,10 @@
 extern "C"
 {
 #endif
-
-
+    void lvgl_thread_entry(void *arg);
 
 #ifdef __cplusplus
 } /*extern "C"*/
 #endif
 
-#endif  //_I80_CONTROLLER_EXAMPLE_MAIN_H
+#endif //_I80_CONTROLLER_EXAMPLE_MAIN_H

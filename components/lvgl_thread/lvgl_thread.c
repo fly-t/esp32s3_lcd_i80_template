@@ -142,7 +142,7 @@ static void example_increase_lvgl_tick(void *arg)
     lv_tick_inc(EXAMPLE_LVGL_TICK_PERIOD_MS);
 }
 
-void app_main(void)
+void lvgl_thread_entry(void *arg)
 {
     static lv_disp_draw_buf_t disp_buf; // contains internal graphic buffer(s) called draw buffer(s)
     static lv_disp_drv_t disp_drv;      // contains callback functions
@@ -400,7 +400,9 @@ void button_01_cb(lv_event_t *e)
 {
     lv_event_code_t event_code = lv_event_get_code(e);
     lv_obj_t *target = lv_event_get_target(e);
+    lv_state_t res = lv_obj_get_state(target);
     if (event_code == LV_EVENT_CLICKED)
     {
+        ESP_LOGI(TAG, "Display LVGL event_code:%d", res);
     }
 }

@@ -428,6 +428,11 @@ CONFIG_EXAMPLE_LCD_TOUCH_CONTROLLER_FT5X06=y
 # end of Example Configuration
 
 #
+# Example Configuration
+#
+# end of Example Configuration
+
+#
 # Compiler options
 #
 CONFIG_COMPILER_OPTIMIZATION_DEFAULT=y

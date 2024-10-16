@@ -68,6 +68,6 @@ direct_dependencies:
 - espressif/esp_lcd_touch_tt21100
 - idf
 - lvgl/lvgl
-manifest_hash: a78cc241ee544f7036b91d252e1c7ce39abaf99f0f4da0f25557009fa7bf2be1
+manifest_hash: 45b286b5e6338d13eca4b123d140a7ab4392eaa56624fbd85d6b417a64191271
 target: esp32s3
 version: 2.0.0
