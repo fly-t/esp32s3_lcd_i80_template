@@ -1,0 +1,55 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "idf.py build",
+            "type": "shell",
+            "command": "idf.py",
+            "args": [
+                "build"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": false
+            }
+        },
+        {
+            "label": "idf.py flash",
+            "type": "shell",
+            "command": "idf.py",
+            "args": [
+                "flash"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": false
+            }
+        },
+        {
+            "label": "idf.py monitor",
+            "type": "shell",
+            "command": "idf.py",
+            "args": [
+                "monitor"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": false
+            }
+        },
+        {
+            "label": "idf.py build encrypted-flash monitor",
+            "type": "shell",
+            "command": "idf.py",
+            "args": [
+                "build",
+                "encrypted-flash",
+                "monitor"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": false
+            }
+        },
+    ]
+}
