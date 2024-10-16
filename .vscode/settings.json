@@ -1,0 +1,19 @@
+{
+    "files.associations": {
+        "*.qmd": "markdown",
+        "*.md": "markdown",
+        "esp_lcd_touch_ft5x06.h": "c",
+        "freertos.h": "c",
+        "lv_demos.h": "c",
+        "lv_demo_benchmark.h": "c",
+        "lv_demo_music.h": "c",
+        "ui.h": "c",
+        "regex": "c",
+        "gpio.h": "c",
+        "esp_lcd_panel_vendor.h": "c",
+        "esp_lcd_panel_io.h": "c",
+        "task.h": "c",
+        "sdkconfig.h": "c",
+        "lvgl.h": "c"
+    }
+}
