@@ -2,11 +2,12 @@
     "version": "2.0.0",
     "tasks": [
         {
-            "label": "idf.py build",
+            "label": "IDF: build",
             "type": "shell",
             "command": "idf.py",
             "args": [
-                "--ccache build"
+                "--ccache",
+                "build"
             ],
             "group": {
                 "kind": "build",
@@ -38,10 +39,26 @@
             }
         },
         {
-            "label": "idf.py monitor",
             "type": "shell",
+            "label": "IDF: Flash + Monitor",
             "command": "idf.py",
             "args": [
+                "flash",
+                "monitor"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": false
+            }
+        },
+        {
+            "type": "shell",
+            "label": "IDF: Build + Flash + Monitor",
+            "command": "idf.py",
+            "args": [
+                "--ccache",
+                "build",
+                "flash",
                 "monitor"
             ],
             "group": {
