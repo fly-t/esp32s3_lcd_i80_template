@@ -17,6 +17,11 @@
         "lvgl.h": "c",
         "esp_err.h": "c",
         "soc_caps.h": "c",
-        "esp_lcd_panel_ops.h": "c"
-    }
+        "esp_lcd_panel_ops.h": "c",
+        "inttypes.h": "c",
+        "lvgl_thread.h": "c",
+        "esp_chip_info.h": "c",
+        "stdio.h": "c"
+    },
+    "idf.adapterTargetName": "esp32s3"
 }
